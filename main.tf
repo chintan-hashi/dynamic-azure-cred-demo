@@ -9,8 +9,9 @@ terraform {
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-  
+    skip_provider_registration = true
     features {}
+    
     subscription_id         = "1d76268a-e412-471a-b8b4-69167bd26bb1"
     tenant_id               = "237fbc04-c52a-458b-af97-eaf7157c0cd4"
 }
